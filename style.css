@@ -91,9 +91,12 @@ background:#3e8e41;
 }
 .plants-container{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,200px));
 gap:20px;
-justify-items:center;
+justify-content:center;
 margin-top:20px;
 width:100%;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
 }
