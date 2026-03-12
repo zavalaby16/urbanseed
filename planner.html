@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanSeed Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>UrbanSeed Planner 🌱</h1>
+
+<p>Descubre qué puedes cultivar</p>
+
+<form id="plannerForm">
+
+<button type="button" id="detectLocation">Detectar mi ubicación</button>
+<div id="weatherInfo"></div>
+
+<label>Ciudad</label>
+<input type="text" id="city" list="citySuggestions" placeholder="Escribe tu ciudad">
+
+<datalist id="citySuggestions"></datalist>
+
+<label>Categoría</label>
+<select id="category">
+
+<option value="beginner">Principiante</option>
+<option value="urban">Huerto urbano</option>
+<option value="hydro">Hidroponía</option>
+
+</select>
+
+<label>Espacio</label>
+<select id="space">
+<option>Balcón</option>
+<option>Patio</option>
+<option>Interior</option>
+</select>
+
+<label>Contenedor</label>
+<select id="container">
+<option value="maceta">Maceta</option>
+<option value="caja">Caja de cultivo</option>
+<option value="reja">Caja de reja</option>
+<option value="suelo">Suelo</option>
+<option value="hidro">Hidroponía</option>
+</select>
+
+
+<label>Horas de sol</label>
+<select id="sun">
+<option value="3">3</option>
+<option value="5">5</option>
+<option value="8">8</option>
+</select>
+
+<button type="submit">Recomendar cultivos</button>
+
+</form>
+
+<div id="result"></div>
+
+
+<script src="plants.js"></script>
+<script src="planner.js"></script>
+
+</body>
+</html>	
