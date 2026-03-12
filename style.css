@@ -57,13 +57,20 @@ padding:20px;
 .plant-card{
 background:white;
 border-radius:12px;
-padding:15px;
+padding:12px;
 width:180px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 text-align:center;
 transition:transform 0.2s;
+display:flex;
+flex-direction:column;
+gap:4px;
 }
 
+.plant-card p{
+margin:2px 0;
+font-size:13px;
+}
 .plant-card:hover{
 transform:scale(1.05);
 }
