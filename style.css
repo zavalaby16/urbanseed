@@ -59,11 +59,15 @@ background:white;
 border-radius:12px;
 padding:12px;
 width:200px;
-text-aling:1/1;
+aspect-ratio:4/5;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 text-align:center;
 transition:transform 0.2s;
 overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-conten:center;
+aling-items:center;
 }
 
 .plant-card p{
